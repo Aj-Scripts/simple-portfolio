@@ -39,7 +39,7 @@ header {
 
 .logo {
     font-size: 3rem;
-    color: #d10fe6;
+    color: #32CD32; /* Updated color */
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -65,8 +65,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #d10fe6;
-    border-bottom: 3px solid #d10fe6;
+    color: #32CD32; /* Updated color */
+    border-bottom: 3px solid #32CD32; /* Updated color */
 }
 
 @media (max-width: 995px) {
@@ -76,8 +76,8 @@ nav a.active {
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #d10fe6;
-        border-bottom: 3px solid #d10fe6;
+        border-left: 3px solid #32CD32; /* Updated color */
+        border-bottom: 3px solid #32CD32; /* Updated color */
         border-bottom-left-radius: 2rem;
         padding: 2rem 1rem;
         background-color: #161616;
@@ -98,7 +98,7 @@ nav a.active {
     nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #d10fe6;
+        border-bottom: 0.5rem solid #32CD32; /* Updated color */
     }
 }
 
@@ -110,7 +110,7 @@ section {
 
 h2 {
     font-size: 4rem;
-    color: #d10fe6;
+    color: #32CD32; /* Updated color */
     margin-bottom: 2rem;
 }
 
@@ -128,7 +128,7 @@ h2 {
 }
 
 span {
-    color: #d10fe6;
+    color: #32CD32; /* Updated color */
 }
 
 .home-content h3 {
@@ -149,7 +149,7 @@ span {
     position: relative;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #d10fe6;
+    box-shadow: 0 0 25px solid #32CD32; /* Updated color */
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -166,19 +166,19 @@ span {
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #d10fe6;
+    border: 0.2rem solid #32CD32; /* Updated color */
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #d10fe6;
+    color: #32CD32; /* Updated color */
 }
 
 .social-icons a:hover {
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #d10fe6;
-    box-shadow: 0 0 25px #d10fe6;
+    background-color: #32CD32; /* Updated color */
+    box-shadow: 0 0 25px #32CD32; /* Updated color */
 }
 
 .btn {
@@ -187,10 +187,10 @@ span {
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #d10fe6;
+    color: #32CD32; /* Updated color */
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #d10fe6;
+    border: 2px solid #32CD32; /* Updated color */
     transition:
 }
 
@@ -209,13 +209,14 @@ span {
 #aaa li {
     margin-bottom: 50px;
 }
+
 .footer {
     background-color: black; /* Matches the body background */
-    color: #d10fe6; /* Same color as other highlighted elements */
+    color: #32CD32; /* Updated color */
     text-align: center;
     padding: 2rem 0;
     font-size: 1.4rem;
-    border-top: 2px solid #d10fe6;
+    border-top: 2px solid #32CD32; /* Updated color */
 }
 
 .footer p {
