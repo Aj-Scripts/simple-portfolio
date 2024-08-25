@@ -12,6 +12,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +31,6 @@ header {
     width: 100%;
     padding: 1rem 9%;
     background-color: transparent;
-    filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ header {
 
 nav {
     display: flex;
-    gap: 2rem; /* Even spacing between navigation links */
+    gap: 2rem;
 }
 
 nav a {
@@ -81,12 +81,11 @@ nav a.active {
         border-bottom-left-radius: 2rem;
         padding: 2rem 1rem;
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
     }
 
     nav.active {
-        display: flex; /* Flex display when active */
+        display: flex;
     }
 
     nav a {
@@ -106,6 +105,13 @@ nav a.active {
 section {
     min-height: 100vh;
     padding: 5rem 9%;
+    background-color: black;
+}
+
+h2 {
+    font-size: 4rem;
+    color: #d10fe6;
+    margin-bottom: 2rem;
 }
 
 .home {
@@ -113,7 +119,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
 }
 
 .home .home-content h1 {
@@ -186,39 +191,33 @@ span {
     letter-spacing: 0.3rem;
     font-weight: 600;
     border: 2px solid #d10fe6;
-    transition: 0.3s ease;
-    cursor: pointer;
+    transition:
 }
 
-.btn:hover {
-    transform: scale3d(1.03);
-    background-color: #d10fe6;
-    color: black;
-    box-shadow: 0 0 25px #d10fe6;
+#aa {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+
 }
 
-@media (max-width: 1000px) {
-    .home {
-        gap: 4rem;
-    }
+#aaa {
+    font-size: 1.6rem;
+
+
 }
 
-@media (max-width: 995px) {
-    .home {
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
+#aaa li {
+    margin-bottom: 50px;
+}
+.footer {
+    background-color: black; /* Matches the body background */
+    color: #d10fe6; /* Same color as other highlighted elements */
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    border-top: 2px solid #d10fe6;
+}
 
-    .home .home-content h3 {
-        font-size: 2.5rem;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
+.footer p {
+    margin: 0;
 }
