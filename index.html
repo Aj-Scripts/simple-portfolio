@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
+
 <body>
     <header>
-        <a href="#" class="logo">Arjun</a>
+        <a href="#" class="logo">Alex</a>
 
         <nav>
             <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
     <section class="home">
@@ -27,11 +27,9 @@
             <img src="main.jpg" alt="">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Arjun S Kumar</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>"I'm a passionate Computer Science and Engineering student skilled in web development, Python, databases, and front-end technologies. I love solving challenges and continuously improving my skills. Let's connect and collaborate!"
-
-            </p>
+            <h1>Hi, It's <span>Alex</span></h1>
+            <h3 class="typing-text">I'm a <span class="dynamic-text"></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -41,5 +39,41 @@
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+
+    <script>
+        const words = ["Web Developer", "Developer", "Web Designer", "Youtuber", "Script Writer"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        const typingSpeed = 150;
+        const erasingSpeed = 100;
+        const delayBetweenWords = 2000;
+        const dynamicText = document.querySelector(".dynamic-text");
+
+        function type() {
+            if (charIndex < words[wordIndex].length) {
+                dynamicText.textContent += words[wordIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, delayBetweenWords);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                dynamicText.textContent = words[wordIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(type, typingSpeed);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(type, delayBetweenWords);
+        });
+    </script>
 </body>
+
 </html>
