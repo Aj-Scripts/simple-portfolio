@@ -145,20 +145,6 @@ span {
     border-radius: 50%;
 }
 
-.home-img img {
-    position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #32CD32; /* Updated color */
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover {
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
 .social-icons a {
     display: inline-flex;
     justify-content: center;
